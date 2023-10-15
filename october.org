@@ -1,2 +1,18 @@
-* this is an important event
+* this is a regular event
+  <2023-10-16 Mon>
+* RED this is an important red event
   <2023-10-18 Wed>
+* ORANGE this is a orange event
+  <2023-10-31 Tue>
+* YELLOW this is an yellow event
+  <2023-10-19 Thu>
+* GREEN this is a green event
+  <2023-10-20 Fri>
+* BLUE this is a blue event
+  <2023-10-23 Mon>
+* PURPLE this is a purple event
+  <2023-10-24 Tue>
+* PINK this is a pink event
+  <2023-10-25 Wed>
+* BROWN this is a brown event
+  <2023-10-26 Thu>

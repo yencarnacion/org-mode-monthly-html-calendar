@@ -30,7 +30,34 @@
           events: {
             url: '/october.ics',
             format: 'ics'
-          }
+          },
+	    eventDidMount: function(info) {
+		// red, orange, yellow, green, blue, purple, pink, brown,            
+		if (info.event.title.startsWith('RED')) {
+		    info.el.style.backgroundColor = 'red';
+		}
+		if (info.event.title.startsWith('ORANGE')) {
+		    info.el.style.backgroundColor = 'orange';
+		}
+		if (info.event.title.startsWith('YELLOW')) {
+		    info.el.style.backgroundColor = 'yellow';
+		}
+		if (info.event.title.startsWith('GREEN')) {
+		    info.el.style.backgroundColor = 'green';
+		}
+		if (info.event.title.startsWith('BLUE')) {
+		    info.el.style.backgroundColor = 'blue';
+		}
+		if (info.event.title.startsWith('PURPLE')) {
+		    info.el.style.backgroundColor = 'purple';
+		}
+		if (info.event.title.startsWith('PINK')) {
+		    info.el.style.backgroundColor = 'pink';
+		}
+		if (info.event.title.startsWith('BROWN')) {
+		    info.el.style.backgroundColor = 'brown';
+		}
+	    }
         });
         calendar.render();
       });
