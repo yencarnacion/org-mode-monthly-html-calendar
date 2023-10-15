@@ -12,6 +12,16 @@
     <!-- FullCalendar iCalendar plugin JS -->
     <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.9/index.global.min.js'></script>
 
+    <style>
+      .fc-event-title {
+	  white-space: normal; 
+      }
+
+      .fc-event-main {
+	  overflow: hidden; /* This is to ensure that the event text doesn't overflow the event container */
+	  }
+    </style>
+    
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
