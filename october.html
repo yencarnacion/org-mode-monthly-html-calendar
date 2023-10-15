@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+
+    <!-- ICAL.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.5.0/ical.min.js"></script>
+
+    <!-- FullCalendar core JS -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+
+    <!-- FullCalendar iCalendar plugin JS -->
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.9/index.global.min.js'></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          events: {
+            url: 'http://localhost:8000/october.ics',
+            format: 'ics'
+          }
+        });
+        calendar.render();
+      });
+    </script>
+  </head>
+  <body>
+    <div id='calendar'></div>
+  </body>
+</html>
